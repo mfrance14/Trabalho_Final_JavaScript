@@ -9,7 +9,7 @@ let categorias = [ // array para filtrar as categorias na barra lateral
 let livros = [
     {"nome": "Eclipse",
     "categoria": 0,
-    "preco": 30.00,
+    "preco": 30.55,
     "imagem": "imagens/eclipse.jpg"
     },
     {"nome": "Amanhecer",
