@@ -50,6 +50,8 @@ function cards(){
                 let divbutton = document.createElement("a");
                 divbutton.className = "btn btn-primary";
                 divbutton.innerHTML = "Comprar";
+                divbutton.id = j;
+                divbutton.onclick = selecionalivros;
         
                 divcardbody.appendChild(divcardtitle);
                 divcardbody.appendChild(divcardtext);
@@ -62,13 +64,31 @@ function cards(){
             }
         }
     }
+}
+
+cards();
+
+let adicionalivros = [];
+function selecionalivros(event){
+    let livro ;
+    for (let i= 0; i < livros.length; i++) {
+        if (this.id == i) {
+            livro = livros[i];
+            
+        }
+        
+    }
+    adicionalivros.push(livro);
+    
+    event.preventDefault();
+}
 
 
-
+function compra(){
+    let envialivros = JSON.stringify(adicionalivros);
+    sessionStorage.setItem('adicionalivros',envialivros);
+    console.log(adicionalivros);
 }
 
 
 
-
-
-cards();

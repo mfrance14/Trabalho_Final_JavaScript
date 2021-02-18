@@ -4,6 +4,11 @@ main{
 
 .header{
   width: 100%;
+  display: flex;
+  /*flex-direction: row;
+  justify-items: center;*/
+  justify-content: center;
+  align-items: center;
   /*position: fixed;*/
   /* top: 0; */
   /* left: 0; */
@@ -72,9 +77,10 @@ li>a:hover{
 .titulo{
   padding-top: 5px;
   text-align: center;
-  margin-left: 3%;
+  margin-left: 450px;
   font-family: 'Nunito', sans-serif;
   color: #001434;
+  
 }
 html{
   padding: 0;
