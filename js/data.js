@@ -1,7 +1,7 @@
 let categorias = [ // array para filtrar as categorias na barra lateral
     "Romance",
     "Terror",
-    "Ficção",
+    "Fantasia",
     "Suspense",
     "Auto Ajuda"
 ]; 

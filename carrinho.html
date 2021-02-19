@@ -1,20 +1,110 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="carrinho.css">
-        <title>Carrinho</title>
-    </head>
-    <body>
-        <main>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="carrinho.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <title>Carrinho</title>
+</head>
 
+<body>
+  <div class="header">
+    <div class="titulo">
+      <h1>Livraria dos Sonhos</h1>
+    </div>
+    <a href="index.html" onclick="compra()"><img src="imagens/home.png" alt="botao carrinho"
+        style="width: auto; height: 50px; margin-left: 450px;"></a>
+  </div>
 
-        </main>
-        
-    </body>
-    <script src="js/carrinho.js"></script>
+  <main>
     
-    </html>
+    <form action="" method="">
+      <div class="dados">
+      <div>
+        <label for="nome-completo" style="margin-left: 10px;">
+          Nome
+        </label>
+        <input type="text" name="nome" id="nome-completo" placeholder="Seu Nome Completo" minlength="5" maxlength="100" style="width: 50%; height: 25px; border-radius: 5px; border: 2px solid #9097AE;background-color:#F3F3F3;"
+          pattern="[a-zA-Z]">
+
+      </div>
+      
+      
+      <div>
+        <label for="rua" style="margin-left: 10px; ">
+          Rua
+        </label>
+        <input type="text" name="rua" id="rua" placeholder="Sua rua" minlength="5" maxlength="100" pattern="[a-zA-Z]"  style="width: 50%; height: 25px; border-radius: 5px; border: 2px solid #9097AE;background-color:#F3F3F3;">
+
+      </div>
+      <div>
+        <label for="bairro"style="margin-left: 10px; " >
+          Bairro
+        </label>
+        <input type="text" name="bairro" id="bairro" placeholder="Seu Bairro" minlength="5" maxlength="100"
+          pattern="[a-zA-Z]"  style="width: 50%; height: 25px; border-radius: 5px; border: 2px solid #9097AE;background-color:#F3F3F3;">
+        <div>
+          <label for="numero" style="margin-left: 10px; ">
+            Número
+          </label>
+          <input type="text" name="number" id="numero" min="0" max="100" style="width: 10%; height: 25px; border-radius: 5px; border: 2px solid #9097AE;background-color:#F3F3F3;">
+
+        </div>
+        
+        <div>
+          <label for="city" style="margin-left: 10px; ">
+            Cidade
+          </label>
+          <input type="text" name="cidade" id="city" placeholder="Coloque Sua Cidade" minlength="5" maxlength="100"
+            pattern="[a-zA-Z]"style="width: 50%; height: 25px; border-radius: 5px; border: 2px solid #9097AE;background-color:#F3F3F3;" >
+
+        </div>
+        
+        <div>
+          <label for="pais" style="margin-left: 10px; ">
+            País
+          </label>
+          <input type="text" list="paises" id="pais" autocomplete="on" style="width: 25%; height: 25px; border-radius: 5px; border: 2px solid #9097AE;background-color:#F3F3F3;">
+          <datalist id="paises">
+            <option value="Brasil">
+            <option value="Estados Unidos">
+            <option value="Egito">
+            <option value="Itália">
+          </datalist>
+
+        </div>
+        
+
+      </div>
+    </form>
+    
+  </div>
+  </main>
+  <div class="button">
+    <button type="submit">Finalizar Compra</button>
+  </div>
+  <footer>
+    <div class="cont">
+      <div class="icones">
+        <a href="https://www.instagram.com/">
+          <img src="imagens/instagram.png" alt="" width="40px" /></a>
+        <a href="https://www.facebook.com/"><img src="imagens/facebook.png" alt="" width="40px" /></a>
+        <a href="https://www.linkedin.com/"><img src="imagens/linkedin.png" alt="" width="40px" /></a>
+      </div>
+      <div class="text">
+        <h5 style="margin-left: 10%">
+          Desenvolvido por Maria Eduarda e Lóren - ©LIVRARIA DOS SONHOS
+        </h5>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="js/carrinho.js"></script>
+
+</html>

@@ -48,7 +48,7 @@ function cards(){
                 divcardtext.className = "card-text";
                 divcardtext.innerHTML = `R$ ${listacards[j].preco}`;
                 let divbutton = document.createElement("a");
-                divbutton.className = "btn btn-primary";
+                divbutton.className = "btn ";
                 divbutton.innerHTML = "Comprar";
                 divbutton.id = j;
                 divbutton.onclick = selecionalivros;
