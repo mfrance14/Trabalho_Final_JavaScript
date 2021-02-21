@@ -20,7 +20,7 @@ function frete(){
 function exibirResumo(){
     let main = document.querySelector("main");
     let titulo = document.createElement("h2");
-    let info = document.createElement ("div");
+    let info = document.createElement ("divinfo");
     let nome = document.createElement ("p");
     let rua = document.createElement ("p");
     let bairro = document.createElement ("p");

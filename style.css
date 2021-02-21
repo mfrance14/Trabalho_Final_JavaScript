@@ -5,23 +5,17 @@ main{
 
 .header{
   width: 100%;
-  display: flex;
-  /*flex-direction: row;
-  justify-items: center;*/
+  display: flex; 
   justify-content: center;
   align-items: center;
-  /*position: fixed;*/
-  /* top: 0; */
-  /* left: 0; */
   background-color:#B596D7;
-  /* height: 70px; */
   height: 100%;
   grid-area: head;
 }
 
 .menu{
   float:left;
-  /* height: 800px; */
+  font-family: 'Nunito', sans-serif;
   grid-area: side;
   background-color: #CCCAFF;
   height: 100%;
@@ -119,11 +113,6 @@ body{
 }
 
 
-.contat{
-  float: right;
-  margin-right:30% ;
-  margin-top: 2%;
-}
 
 .cont{
     font-size: 100%;
@@ -132,19 +121,12 @@ body{
     align-items:center;
     justify-content: space-around;
     
-
-
 }
 
 footer{
-  /* margin-top: 50%; */
   width: 100%;
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* right: 0; */
   background: #B596D7;
   color: white;
-  /* height: 100px; */
   height: 100%;
   display: flex;
   flex-direction: column;
