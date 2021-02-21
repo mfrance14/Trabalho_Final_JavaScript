@@ -8,7 +8,7 @@ function recuperalivros(){
 recuperalivros();
 
 function exibirpedidos(){
-    let main = document.querySelector("main");
+    let main = document.querySelector("#livros");
     for(let i = 0; i < guardalivros.length; i++){
         let divpedidos = document.createElement("div");
         let img = document.createElement("img");
@@ -27,5 +27,34 @@ function exibirpedidos(){
 
         main.appendChild(divpedidos);
     }
+
+}
+
+let dadosusuario = [];
+
+function enviardados(){
+    let nome = document.getElementById("nome-completo").value;
+    let rua = document.getElementById("rua").value;
+    let bairro = document.getElementById("bairro").value;
+    let numero = document.getElementById("numero").value;
+    let cidade = document.getElementById("city").value;
+    let pais = document.getElementById("pais").value;
+
+    let dados = {
+        "nome":`${nome}`,
+        "rua":`${rua}`,
+        "bairro":`${bairro}`,
+        "numero":`${numero}`,
+        "cidade":`${cidade}`,
+        "pais":`${pais}`
+    }
+
+    dadosusuario.push(dados);
+    let enviar = JSON.stringify(dadosusuario);
+    sessionStorage.setItem('dadosusuario',enviar);
+    enviar = JSON.stringify(guardalivros);
+    sessionStorage.setItem('guardalivros',enviar);
+    console.log (dados);
+
 
 }

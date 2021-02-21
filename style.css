@@ -122,10 +122,12 @@ body{
 
 .cont{
     font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 25%;
-    margin-top: 1%;
-    margin-bottom: 5%;
+
+
 }
 
 footer{
@@ -140,16 +142,16 @@ footer{
   height: 100%;
   display: flex;
   align-items: center; 
+  justify-content: center;
   grid-area: footer;
 }
 .icones{
     margin-bottom: 10px;
-    padding-left: 28%;
+    margin-top: 10px ;
 }
  
 .text{
     color: #1C1A27;
-  margin-bottom: 20%;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -170,7 +172,9 @@ a:link {
 
   
 
-  .row {margin: 0 -5px;}
+  .row {
+    width: 100%;
+  }
   
   .row:after {
     content: "";

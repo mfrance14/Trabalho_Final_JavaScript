@@ -8,7 +8,7 @@ function categoria(){
         let itemlateral = document.createElement("a");
         let item = document.createElement("li");
         itemlateral.innerHTML = listacategoria[j];
-        itemlateral.href = `#${j}`;
+        itemlateral.href = `#${j}categoria`;
         item.appendChild(itemlateral);
         menulateral.appendChild(item);
         
@@ -26,7 +26,7 @@ function cards(){
     
     for(let w = 0; w<categorias.length;w++){
         let divcategoria = document.createElement("div");
-        divcategoria.id = `${w}`;
+        divcategoria.id = `${w}categoria`;
         divcategoria.className = "row";
 
         for (let j = 0; j < listacards.length; j++) {
