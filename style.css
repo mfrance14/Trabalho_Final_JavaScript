@@ -69,7 +69,9 @@ li>a:hover{
     height: auto;
 }
 
-
+.card h5{
+  min-height: 80px;
+}
 .column2{
   margin-bottom: 10%;
   float: left;
@@ -96,13 +98,16 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   display: grid;
-  grid-template-rows: 70px 100% 100px;
+  grid-template-rows: 70px 100% 310px;
   grid-template-columns: 2fr 8fr;
   grid-template-areas: 
     "head head"
-    "side main"
-    
+    "side main"   
     "footer footer";
+}
+
+.cont img{
+  margin-right: 10px;
 }
 
 .btn{
@@ -123,9 +128,10 @@ body{
 .cont{
     font-size: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    
 
 
 }
@@ -141,8 +147,11 @@ footer{
   /* height: 100px; */
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center; 
   justify-content: center;
+  padding-top: 20px;
+
   grid-area: footer;
 }
 .icones{
@@ -153,6 +162,9 @@ footer{
 .text{
     color: #1C1A27;
     font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    
 }
 
 
